@@ -1,0 +1,23 @@
+{
+  "$schema": "https://raw.githubusercontent.com/jetify-com/devbox/0.13.6/.schema/devbox.schema.json",
+  "packages": [
+    "git@latest",
+    "tig@latest",
+    "tmux@latest",
+    "bashInteractive@latest",
+    "cowsay@latest"
+  ],
+  "shell": {
+    "init_hook": [
+      "cowsay 'Welcome to devbox!'"
+    ],
+    "environment": {
+      "EDITOR": "${HOME}/homelab-nixos-configs/nvim.sh"
+    },
+    "scripts": {
+      "nvim": [
+        "nix --extra-experimental-features 'nix-command flakes' run github:vpayno/neovim-nix-nvf-conf -- ${@}"
+      ]
+    }
+  }
+}

@@ -1,0 +1,3 @@
+#!/usr/bin/env bash
+
+time nix-shell -p devbox --command "devbox run ${*}"

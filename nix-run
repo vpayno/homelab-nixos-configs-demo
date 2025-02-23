@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+
+# add new packages to shell.nix first before trying to run them with this wrapper script
+time nix-shell --command "${*}"
