@@ -8,8 +8,16 @@ in
 pkgs.mkShell {
   packages = with pkgs; [
     bashInteractive
+    coreutils
     devbox
     git
+    glow
+    moreutils
+    nixos-anywhere
+    nixos-rebuild
+    npins
+    openssh
+    runme
     tig
     tmux
   ];
