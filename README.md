@@ -1,6 +1,6 @@
-# homelab-nixos-configs
+# homelab-nixos-configs-demo
 
-The NixOS configuration for systems in my homelab.
+Demo of NixOS configurations for systems in my homelab.
 
 ## devbox & nix-shell
 
